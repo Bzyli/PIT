@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function print_logo() {
+ echo "WIP" 
+}
+
+./reset.sh
+
+./generate_seed.sh
