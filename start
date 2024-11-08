@@ -1,15 +1,14 @@
 #!/bin/bash
 
-PATH=$(pwd)/.utils/verif:$PATH
-
 function print_logo() {
  echo "WIP" 
 }
 
 function generate_final_code() {
-  tr -dc A-Za-z0-9 </dev/urandom | head -c 64 > .utils/code_super_secret_ne_divulguer_sans_aucun_pretexte
+  tr -dc A-Za-z0-9 </dev/urandom | head -c 64 > .utils/code_super_secret_a_ne_divulguer_sous_aucun_pretexte
 }
 
-./reset.sh
-
-./generate_seed.sh
+print_logo
+./reset
+generate_final_code
+./.utils/generate_tree.sh

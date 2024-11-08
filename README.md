@@ -20,9 +20,9 @@ Le script félicite : Super ! Vous voulez du gateau ? ah bah non the cake is a l
 
 TODO :
 - [ ] Script de verif du code
-- [ ] Generateur d'arbo random
+- [x] Generateur d'arbo random
 - [ ] Generer archive avec fichier texte dedans
 - [ ] base64 avec nom de machine
 - [ ] Creer processus et verifier qu'il est kill
 - [ ] Gestion des groupes
-- [ ] Facile, on écrit juste un fichier code_super_secret avec 42 dedans
+- [x] Facile, on écrit juste un fichier code_super_secret avec 42 dedans

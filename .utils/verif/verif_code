@@ -1,5 +1,7 @@
 #!/bin/bash
 
-if (( $1 == $(cat ../code_super_secret_ne_divulguer_sans_aucun_pretexte))); then
-  echo "C'était bien 42, comme d'habitude, c'est toujours 42 de toute façon..."
+code="$(dirname "$(realpath $0)")"/../code_super_secret_a_ne_divulguer_sous_aucun_pretexte
+
+if [ "$1" == "$(cat $code)" ]; then
+  echo "Ce code était le bon, Bravo !"
 fi
