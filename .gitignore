@@ -1,2 +1,3 @@
 super_secure_network
-.utils/temp/*
+.utils/temp/code
+.utils/temp/machines
