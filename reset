@@ -1,4 +1,5 @@
 #!/bin/bash
 
 rm -rf super_secure_network/
-rm -rf .utils/temp/*
+rm .utils/temp/code
+rm .utils/temp/machines
