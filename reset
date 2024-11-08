@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf super_secure_network/ 
-rm -f .utils/code_super_secret_a_ne_divulguer_sous_aucun_pretexte
+rm -rf super_secure_network/
+rm -rf .utils/temp/*

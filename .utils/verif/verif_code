@@ -1,6 +1,6 @@
 #!/bin/bash
 
-code="$(dirname "$(realpath $0)")"/../code_super_secret_a_ne_divulguer_sous_aucun_pretexte
+code="$(dirname "$(realpath $0)")"/../temp/code
 
 if [ "$1" == "$(cat $code)" ]; then
   echo "Ce code était le bon, Bravo !"
