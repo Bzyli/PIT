@@ -7,7 +7,7 @@ for ((i=0; i<6; i++)); do
     MAX_DEPTH="${depth[RANDOM % ${#depth[@]}]}"
 
     ROOT_DIR=$path/"../super_secure_network"
-
+    echo $ROOT_DIR
     #find files at depth
     files_at_max_depth=$(find "$ROOT_DIR" -type f -path "$(printf "*/%.0s" $(seq 1 $MAX_DEPTH))*" 2>/dev/null)
 
