@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PATH=$(pwd)/.utils/verif:$PATH
+
 function print_logo() {
  echo "WIP" 
 }
