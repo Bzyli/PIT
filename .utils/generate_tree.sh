@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Parameters: depth and width of the directory tree
-MAX_DEPTH=6      # Maximum depth of the tree
+MAX_DEPTH=8      # Maximum depth of the tree
 MAX_BRANCHES=6   # Maximum number of directories/files per level
 
 # Function to generate a random name
@@ -15,8 +15,9 @@ generate_tree() {
     local current_dir=$2
 
     # Stop if max depth is reached
-    if (( current_depth > $MAX_DEPTH )); then
-        return
+    if (( current_depth >= $MAX_DEPTH )); then
+      echo "Raté, ce n'est pas la bonne machine ... " > "$current_dir/$(generate_random_name).txt"
+      return
     fi
 
     # Generate random number of items (directories and filesi)
@@ -38,4 +39,3 @@ mkdir -p "$ROOT_DIR"
 generate_tree 1 "$ROOT_DIR"
 
 echo "Directory tree created in $ROOT_DIR"
-
