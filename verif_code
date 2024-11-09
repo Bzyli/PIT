@@ -1,6 +1,6 @@
 #!/bin/bash
 
-code="$(dirname "$(realpath $0)")"/../temp/code
+code=/.utils/temp/code
 
 if [ "$1" == "$(cat $code)" ]; then
   echo "Ce code était le bon, Bravo !"
