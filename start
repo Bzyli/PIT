@@ -11,5 +11,10 @@ function generate_final_code() {
 print_logo
 ./reset
 generate_final_code
-./.utils/generate_tree.sh
-./.utils/random_file.sh
+cd .utils
+./generate_tree.sh
+echo "Connection au réseau.."
+sleep .8
+./random_file.sh
+echo "Connecté !"
+./enigme_0.sh

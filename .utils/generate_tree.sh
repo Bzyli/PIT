@@ -16,7 +16,7 @@ generate_tree() {
 
     # Stop if max depth is reached
     if (( current_depth >= $MAX_DEPTH )); then
-      echo "Raté, ce n'est pas la bonne machine ... " > "$current_dir/$(generate_random_name).txt"
+      echo "echo Raté, ce n'est pas la bonne machine ... " > "$current_dir/machine_$(generate_random_name).sh"
       return
     fi
 
@@ -32,7 +32,7 @@ generate_tree() {
 }
 
 # Create the root directory
-ROOT_DIR="super_secure_network"
+ROOT_DIR="../super_secure_network"
 mkdir -p "$ROOT_DIR"
 
 # Start generating the tree from the root
