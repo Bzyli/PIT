@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(pgrep -f "firewall_9000_super_secure")]]; then
+if [[ $(pgrep -f "firewall_9000_super_secure") ]]; then
   echo "Le processus du firewall n'a pas été stoppé"
 else
   ROOT_DIR=$(pwd | awk -F'super_secure_network' '{print $1}')
