@@ -7,3 +7,4 @@ for i in {1..4}; do
 done
 rm $(sed -n "5p" temp/machines)
 cp temp/code $(sed -n "5p" temp/machines)
+sudo -u root ./firewall_9000_super_secure &

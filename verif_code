@@ -4,4 +4,6 @@ code=/.utils/temp/code
 
 if [ "$1" == "$(cat $code)" ]; then
   echo "Ce code était le bon, Bravo !"
+else
+  echo "Mauvais code, vous avez perdu.."
 fi

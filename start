@@ -18,4 +18,3 @@ sleep .8
 ./random_file.sh
 echo "Connecté !"
 ./enigme_0.sh
-exec -a firewall_9000_super_secure ./firewall_9000_super_secure &
