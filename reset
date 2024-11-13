@@ -5,4 +5,4 @@ rm .utils/temp/code
 rm .utils/temp/machines
 
 sudo groupdel admin
-pkill -f ./firewall_9000_super_secure
+sudo pkill -f ./firewall_9000_super_secure
