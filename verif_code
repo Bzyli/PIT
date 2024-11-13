@@ -4,6 +4,9 @@ code=.utils/temp/code
 
 if [ "$1" == "$(cat $code)" ]; then
   echo "Ce code était le bon, Bravo !"
+  start_time=$(cat .utils/temp/time)
+  temps_total=$(($(date +%s) - $start_time))
+  echo "Temps mis : $(date -u -d @${temps_total} +'%T')"
 else
   echo "Mauvais code, vous avez perdu.."
 fi

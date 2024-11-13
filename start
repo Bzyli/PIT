@@ -1,15 +1,15 @@
 #!/bin/bash
 
 function print_logo() {
- echo "WIP" 
+  echo "WIP"
 }
 
 function generate_final_code() {
-  tr -dc A-Za-z0-9 </dev/urandom | head -c 64 > .utils/temp/code
+  tr -dc A-Za-z0-9 </dev/urandom | head -c 64 >.utils/temp/code
 }
 
 print_logo
-./reset
+./reset >/dev/null 2>&1
 generate_final_code
 cd .utils
 ./generate_tree.sh
@@ -17,4 +17,5 @@ echo "Connection au réseau.."
 sleep .8
 ./random_file.sh
 echo "Connecté !"
+echo $(date +%s) >temp/time
 ./enigme_0.sh

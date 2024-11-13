@@ -3,6 +3,7 @@
 rm -rf super_secure_network/
 rm .utils/temp/code
 rm .utils/temp/machines
+rm .utils/temp/time
 
 sudo groupdel admin
 sudo pkill -f ./firewall_9000_super_secure
